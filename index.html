@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass The BOMB - Raberd-Wela-AHHHHH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kanit:wght@300;400;600;800&family=Russo+One&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bomb: {
+                            red: '#e60000',
+                            navy: '#0b1b3d',
+                            yellow: '#ffcc00',
+                            yellow2: '#FFEE00',
+                            darkNavy: '#050c1e',
+                            lightBg: '#f4f6fc',
+                            cyan: '#00E5FF',
+                            orange: '#FF8C00',
+                            neonRed: '#FF2A2A'
+                        }
+                    },
+                    fontFamily: {
+                        russo: ['"Russo One"', 'sans-serif'],
+                        kanit: ['Kanit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-image: linear-gradient(180deg, rgba(5, 12, 30, 0.75) 0%, rgba(5, 12, 30, 0.92) 100%), 
+                              url('https://img.magnific.com/free-vector/pixel-clouds-set-game-background_107791-34709.jpg?semt=ais_hybrid&w=740&q=80.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            image-rendering: pixelated;
+        }
+
+        .bomb-btn {
+            background-color: #e60000;
+            color: #ffffff;
+            border: 3px solid #0b1b3d;
+            box-shadow: 4px 4px 0px 0px #0b1b3d;
+            transition: all 0.15s ease-in-out;
+        }
+        .bomb-btn:hover {
+            background-color: #ffcc00;
+            color: #0b1b3d;
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #0b1b3d;
+        }
+        .bomb-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px #0b1b3d;
+        }
+        .card-shadow {
+            box-shadow: 6px 6px 0px 0px #0b1b3d;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen flex flex-col justify-center items-center py-10 gap-6 text-white selection:bg-bomb-red selection:text-white">
+    
+    <main class="w-full flex items-center justify-center px-4">
+        <div class="max-w-3xl w-full mx-auto text-center z-10 bg-transparent backdrop-blur-md p-8 sm:p-12 border-4 border-bomb-neonRed rounded-2xl relative overflow-hidden card-shadow">
+
+            <div class="inline-block bg-bomb-yellow text-bomb-navy font-russo text-xs sm:text-sm px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 border-2 border-bomb-navy shadow-[2px_2px_0px_0px_#0b1b3d]">
+                ⚡ WELCOME TO THE GAME ⚡
+            </div>
+
+            <div class="mb-8 flex justify-center items-center">
+                <img src="bg-img.png" alt="Pass The BOMB" class="max-w-full h-auto max-h-28 sm:max-h-36 drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]">
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-sm p-5 sm:p-6 border-2 border-white/30 rounded-xl mb-8 shadow-inner">
+                <p class="text-lg sm:text-xl text-gray-100 leading-relaxed font-kanit font-light">
+                    เกมที่ผู้เล่น 4 คน ผลัดกันแก้ปัญหาคณิตศาสตร์ภายในเวลาที่กำหนด ตอบถูกส่งระเบิดให้คนถัดไป! หากตอบไม่ทันจะถูกนำออกจากการแข่งขัน! 💣💥
+                </p>
+            </div>
+
+            <div>
+                <a href="https://github.com/LicoRyte/Raberd-Wela-AHHHHH" target="_blank" class="bomb-btn inline-flex items-center gap-2 px-8 py-4 font-russo text-sm sm:text-base uppercase tracking-wider rounded-xl">
+                    <span>⚡ GO TO SOURCE CODE! ⚡</span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <section class="w-full flex items-center justify-center px-4">
+        <div class="max-w-3xl w-full mx-auto bg-bomb-transparent border-4 border-bomb-orange rounded-2xl p-8 sm:p-12 card-shadow backdrop-blur-md">
+            <div class="flex items-center gap-3 mb-6 pb-4 border-b-2 border-white/20">
+                <span class="text-3xl">📝</span>
+                <div>
+                    <h2 class="font-russo text-xl sm:text-2xl text-bomb-yellow uppercase tracking-wide">
+                        Abstract
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-300 font-light">บทคัดย่อ</p>
+                </div>
+            </div>
+
+            <div class="w-full text-sm sm:text-base">
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <div>
+                        <h4 class="font-light text-white text-lg mb-2 indent-10">
+                            PASS THE BOMB เป็นการพัฒนาเกมปาร์ตี้แนวฝึกทักษะการคิดเลขเร็วผสมผสานกับเทคโนโลยี IoT โดยใช้ไมโครคอนโทรลเลอร์ Arduino UNO R4 WiFi จำนวน 5 บอร์ด แบ่งเป็นเครื่อง Host สำหรับควบคุมเกม 1 บอร์ด และเครื่องผู้เล่น Player 4 บอร์ด ซึ่งเชื่อมต่อสื่อสารกันแบบผ่านโปรโตคอล MQTT
+                            ตัวเกมจำลองสถานการณ์ส่งระเบิดเวลาที่ผู้เล่นจะต้องแข่งกันแก้โจทย์คณิตศาสตร์ ซึ่งมีความยากเพิ่มขึ้นต่อเนื่อง 10 ระดับ ภายในเวลาจำกัด 10 วินาที ผ่านปุ่ม Keypad และแสดงผลบนจอ LCD หากตอบถูกระเบิดจะถูกส่งต่อไปยังคนถัดไป แต่ถ้าหมดเวลาจะเสียหัวใจ 1 ดวง เล่นจนเหลือผู้ชนะคนสุดท้าย ระบบรองรับการเข้าห้องอัตโนมัติเมื่อครบ 4 คน
+                        </h4>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="w-full flex items-center justify-center px-4">
+        <div class="max-w-3xl w-full mx-auto bg-bomb-transparent border-4 border-bomb-yellow rounded-2xl p-8 sm:p-12 card-shadow backdrop-blur-md">
+            
+            <div class="flex items-center gap-3 mb-6 pb-4 border-b-2 border-white/20">
+                <span class="text-3xl">📜</span>
+                <div>
+                    <h2 class="font-russo text-xl sm:text-2xl text-bomb-yellow uppercase tracking-wide">
+                        Description
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-300 font-light">รายละเอียด</p>
+                </div>
+            </div>
+            
+            <div class="w-full text-sm sm:text-base">
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">❓</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">คืออะไร ? </h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                           เกมปาร์ตี้แก้โจทย์คณิตศาสตร์แข่งกับเวลา สำหรับผู้เล่น 4 คน ใช้ Arduino UNO R4 WiFi 4 บอร์ด (Host 1 + Player 4) เชื่อมต่อกันผ่าน WiFi และ MQTT
+                           ผู้เล่นแต่ละคนมี Keypad และจอ LCD ของตัวเอง ส่วน Host มีจอ LCD และ Buzzer สำหรับนับเวลาถอยหลัง
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">💣</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">วิธีเล่น</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            1.เปิดเครื่องทุกบอร์ด ผู้เล่นจะเข้าห้องอัตโนมัติ เมื่อครบ 4 คนเกมจะเริ่มเอง <br>
+                            2.ผู้เล่นจะได้รับโจทย์ทีละคนตามลำดับ และมีเวลาตอบ 10 วินาที <br>
+                            3.พิมพ์คำตอบด้วย Keypad, กด * เพื่อลบ, กด # เพื่อส่ง <br>
+                            4.ตอบถูกแล้วระเบิดจะส่งต่อไปยังคนถัดไป ถ้าตอบผิดให้ลองใหม่ได้ แต่เวลายังเดินต่อ <br>
+                            5.ถ้าหมดเวลา ระเบิดจะ “BOOM!” และผู้เล่นเสียหัวใจ 1 ดวง (เริ่มต้นมี 3 ดวง) <br>
+                            6.หัวใจหมดแล้วจะตกรอบ คนสุดท้ายที่เหลือคือผู้ชนะ <br>
+                            7.โจทย์จะยากขึ้นทุก 2 รอบ จากบวกลบไปจนถึงเลขยกกำลังและรากที่สอง <br> (สูงสุด 10 ระดับ)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">💳</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">จุดประสงค์</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            1.ฝึกการเชื่อมต่อและสื่อสารระหว่าง Microcontroller หลายตัวผ่านอินเทอร์เน็ต (IoT) <br>
+                            2.เรียนรู้การทำ Multiplayer ด้วย MQTT เช่น การเข้าห้อง และการจัดการเมื่อเครื่องหลุดการเชื่อมต่อ <br>
+                            3.เกมที่สนุก การฝึกคิดเลขเร็วภายใต้ความกดดันจากเวลาและสิ่งรบกวน <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">💻</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">อุปกรณ์ที่ใช้</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            1.Arduino UNO R4 WiFi 5 ตัว <br>
+                            2.LCD I2C 5 ตัว <br>
+                            3.Keypad (3x4 หรือ 4x4 ก็ได้) 4 ตัว <br>
+                            4.Passive Buzzer 1 ตัว <br>
+                            5.สาย Jumper Wire เท่าท่ี่ต้องการสำหรับต่อแต่ละ Module เข้าด้วยกัน <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">🌐</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">Requirements</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            1.สํญญาณอินเทอร์เน็ตที่เสถียร <br>
+                            2.อุปกรณ์จ่ายไฟให้แก่ Arduino <br>
+                        </p>
+                        <hr class="mt-3 mb-3 bg-white/5 border border-white/10">
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            == Player (×4) == <br>
+                            LCD	Arduino  <br>
+                            - VCC	5V <br>
+                            - GND	GND
+                            - SDA	SDA (A4) <br>
+                            - SCL	SCL (A5) <br>
+                            <br>
+                            Keypad <br>
+                            - Row 1 (1 2 3)	D11 <br>
+                            - Row 2 (4 5 6)	D10 <br>
+                            - Row 3 (7 8 9)	D9 <br>
+                            - Row 4 (* 0 #)	D8 <br>
+                            - Col 1 (1 4 7 *)	D4 <br>
+                            - Col 2 (2 5 8 0)	D3 <br>
+                            - Col 3 (3 6 9 #)	D2 <br>
+                        </p>
+                        <hr class="mt-3 mb-3 bg-white/5 border border-white/10">
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            == Host (×1) == <br>
+                            LCD	Arduino  <br>
+                            - VCC	5V <br>
+                            - GND	GND
+                            - SDA	SDA (A4) <br>
+                            - SCL	SCL (A5) <br>
+                            <br>
+                            Buzzer	Arduino <br>
+                            - VCC 5V <br>
+                            - I/O D8 <br>
+                            - GND GND <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">📖</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">Library</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            - WiFiS3: มีใน Board Package ของ UNO R4 <br>
+                            - MQTT by Joel Gaehwiler: ใช้ MQTTClient.h <br>
+                            - LiquidCrystal: I2C <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 mb-5 p-5 sm:p-6 rounded-xl flex items-start gap-4 hover:border-bomb-yellow/50 transition">
+                    <span class="text-3xl mt-0.5">⚙️</span>
+                    <div>
+                        <h3 class="font-semibold text-white text-lg mb-2">Setting Code</h3>
+                        <p class="text-gray-300 font-light text-sm sm:text-base leading-relaxed">
+                            1. ใส่ชื่อและรหัส WiFi ใน WIFI_SSID และ WIFI_PASSWORD ทั้ง 5 บอร์ด <br>
+                            2. ฝั่ง Player แก้ PLAYER_ID ให้ไม่ซ้ำกัน: P1, P2, P3, P4 <br>
+                            3. อัปโหลด host.ino ลงบอร์ด Host และโค้ด Player ลงอีก 4 บอร์ด <br>
+                            4. เปิดเครื่องทุกบอร์ด จะเปิดเครื่องไหนก่อนก็ได้ <br>
+                            5. รอให้ทุกบอร์ดเชื่อมต่อ WiFi และ MQTT <br>
+                            6.เมื่อผู้เล่นครบ 4 คน เกมจะเริ่มอัตโนมัติ <br>
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-white/10 text-center text-xs text-gray-400">
+                by <span class="text-bomb-yellow font-semibold">กลุ่ม Raberd-Wela-AHHHHH </span> 💥
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
