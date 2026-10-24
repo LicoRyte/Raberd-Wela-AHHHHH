@@ -1,8 +1,7 @@
 # Physical Computing Project 2026 - IT KMITL
 ## Raberd-Wela-AHHHHH
 
-### Website
-  https://txe1750.github.io/
+### Website : https://txe1750.github.io/
 
 ### Description
   "Raberd-Wela-AHHHHH" คือ Game Development เป็นเกมที่ผู้เล่น 4 คน ผลัดกันแก้ปัญหาคณิตศาสตร์ ภายในเวลาที่กำหนด ถ้าผู้เล่นตอบถูกภายในเวลาที่กำหนด ระเบิดจะถูกส่งให้ผู้เล่นคนถัดไป แต่ถ้า ตอบไม่ทันภายในเวลาที่กำหนด ผู้เล่นจะถูกนำออกจากการแข่งขัน
